@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe - Author Official Website</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Your Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-md shadow-sm fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold font-serif text-gray-800">Jane Doe</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-700 hover:text-gray-900 active">Home</a>
+                <a href="#books" class="nav-link text-gray-700 hover:text-gray-900">Books</a>
+                <a href="#blog" class="nav-link text-gray-700 hover:text-gray-900">Blog</a>
+                <a href="#podcast" class="nav-link text-gray-700 hover:text-gray-900">Podcast</a>
+                <a href="#quotes" class="nav-link text-gray-700 hover:text-gray-900">Quotes</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-gray-900">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#home" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+            <a href="#books" class="block py-2 px-4 text-sm hover:bg-gray-200">Books</a>
+            <a href="#blog" class="block py-2 px-4 text-sm hover:bg-gray-200">Blog</a>
+            <a href="#podcast" class="block py-2 px-4 text-sm hover:bg-gray-200">Podcast</a>
+            <a href="#quotes" class="block py-2 px-4 text-sm hover:bg-gray-200">Quotes</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg pt-32 pb-16 md:pt-48 md:pb-24">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                    <h1 class="text-5xl md:text-7xl font-bold text-gray-800 leading-tight">Weaving Worlds with Words.</h1>
+                    <p class="mt-6 text-lg text-gray-600 max-w-lg mx-auto md:mx-0">Welcome to my little corner of the internet. Explore my latest books, thoughts on writing, and other creative endeavors.</p>
+                    <a href="#books" class="btn-primary mt-8 inline-block">Explore My Books</a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://placehold.co/400x500/e2d8ce/333333?text=Jane+Doe" alt="Author Jane Doe" class="rounded-lg shadow-2xl w-3/4 md:w-auto max-w-sm">
+                </div>
+            </div>
+        </section>
+
+        <!-- Books Section -->
+        <section id="books" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-4">My Books</h2>
+                <p class="text-gray-600 mb-12">Dive into new worlds and meet unforgettable characters.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <!-- Book Card 1 -->
+                    <div class="book-card text-left group">
+                        <div class="relative">
+                            <img src="https://placehold.co/350x500/c0a080/FFFFFF?text=The+Last+Starlight" alt="Book Cover" class="book-cover rounded-lg shadow-lg mb-4 w-full transition-transform duration-300">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">The Last Starlight</h3>
+                        <p class="text-gray-600 mb-4">An epic fantasy adventure about a quest to restore magic to a dying world.</p>
+                        <a href="#" class="font-semibold text-[#c0a080] hover:underline">Find out more &rarr;</a>
+                    </div>
+                    <!-- Book Card 2 -->
+                    <div class="book-card text-left group">
+                         <img src="https://placehold.co/350x500/6b7280/FFFFFF?text=Echoes+of+Yesterday" alt="Book Cover" class="book-cover rounded-lg shadow-lg mb-4 w-full transition-transform duration-300">
+                        <h3 class="text-2xl font-bold mb-2">Echoes of Yesterday</h3>
+                        <p class="text-gray-600 mb-4">A thrilling mystery where a historian uncovers a conspiracy centuries in the making.</p>
+                        <a href="#" class="font-semibold text-[#c0a080] hover:underline">Find out more &rarr;</a>
+                    </div>
+                    <!-- Book Card 3 -->
+                    <div class="book-card text-left group">
+                         <img src="https://placehold.co/350x500/8c9ca8/FFFFFF?text=City+of+Glass+Souls" alt="Book Cover" class="book-cover rounded-lg shadow-lg mb-4 w-full transition-transform duration-300">
+                        <h3 class="text-2xl font-bold mb-2">City of Glass Souls</h3>
+                        <p class="text-gray-600 mb-4">In a dystopian city, one woman's secret could be the spark of a revolution.</p>
+                        <a href="#" class="font-semibold text-[#c0a080] hover:underline">Find out more &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-4">From My Blog</h2>
+                <p class="text-gray-600 text-center mb-12">Musings on writing, creativity, and the stories that shape us.</p>
+                <div class="space-y-12 max-w-4xl mx-auto">
+                    <!-- Blog Post 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <p class="text-sm text-gray-500 mb-2">October 01, 2025</p>
+                        <h3 class="text-3xl font-bold mb-3">The Architecture of a Good Story</h3>
+                        <p class="text-gray-600 mb-4">What makes a story truly resonate? Let's break down the essential pillars of compelling narrative structure, from inciting incidents to satisfying conclusions...</p>
+                        <a href="#" class="font-semibold text-[#c0a080] hover:underline">Read More &rarr;</a>
+                    </div>
+                    <!-- Blog Post 2 -->
+                     <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <p class="text-sm text-gray-500 mb-2">September 22, 2025</p>
+                        <h3 class="text-3xl font-bold mb-3">Finding Your Author Voice</h3>
+                        <p class="text-gray-600 mb-4">Your voice is your unique fingerprint on the page. Here are five exercises I use to strengthen my own narrative style and how you can apply them to your work...</p>
+                        <a href="#" class="font-semibold text-[#c0a080] hover:underline">Read More &rarr;</a>
+                    </div>
+                </div>
+                 <div class="text-center mt-12">
+                    <a href="#" class="btn-primary">Visit The Full Blog</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Podcast Section -->
+        <section id="podcast" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                 <h2 class="text-4xl font-bold text-center mb-4">The Writer's Well Podcast</h2>
+                <p class="text-gray-600 text-center mb-12">Conversations with authors, editors, and creatives to fuel your inspiration.</p>
+                <div class="bg-gray-100 max-w-4xl mx-auto rounded-xl shadow-lg p-8 flex flex-col md:flex-row items-center gap-8">
+                    <img src="https://placehold.co/200x200/c0a080/FFFFFF?text=Podcast" class="rounded-lg w-48 h-48 flex-shrink-0">
+                    <div>
+                        <p class="font-semibold text-gray-500">Latest Episode</p>
+                        <h3 class="text-3xl font-bold mt-1 mb-3">Ep. 42: The Art of the Rewrite with John Smith</h3>
+                        <p class="text-gray-600 mb-4">Best-selling author John Smith joins us to talk about his revision process, why the first draft is just the beginning, and how to know when a manuscript is truly 'done'.</p>
+                        <!-- Fake audio player -->
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-[#c0a080] h-2.5 rounded-full" style="width: 25%"></div>
+                        </div>
+                        <div class="flex items-center justify-between mt-2 text-sm text-gray-500">
+                            <span>04:15</span>
+                             <span>48:30</span>
+                        </div>
+                        <div class="mt-4">
+                             <a href="#" class="btn-primary">Listen Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Quotes Section -->
+        <section id="quotes" class="py-20 bg-gray-800 text-white">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-4xl font-bold mb-12">A Few of My Favorite Words</h2>
+                 <div id="quote-container" class="relative max-w-3xl mx-auto min-h-[150px]">
+                    <!-- Quotes will be injected here by JS -->
+                 </div>
+                 <div class="flex justify-center space-x-2 mt-8">
+                    <!-- Dots will be injected here by JS -->
+                 </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-4">Get In Touch</h2>
+                <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">For professional inquiries, media requests, or just to say hello, please use the form below. I'd love to hear from you.</p>
+                <form class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c0a080]">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c0a080]">
+                    </div>
+                     <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c0a080]"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary w-full">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-serif mb-4">Jane Doe</p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="hover:text-[#c0a080] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="hover:text-[#c0a080] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                </a>
+                 <a href="#" class="hover:text-[#c0a080] transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2h.001zm-1.04 4.25a.75.75 0 00-1.06 1.06L11.94 12l-1.725 1.725a.75.75 0 001.06 1.06L13 13.06l1.725 1.725a.75.75 0 101.06-1.06L14.06 12l1.725-1.725a.75.75 0 10-1.06-1.06L13 10.94l-1.725-1.725z" clip-rule="evenodd" transform="translate(-.98 -1.2)" scale="1.2"/>
+                    <path d="M12 16a4 4 0 100-8 4 4 0 000 8zm0-6a2 2 0 110 4 2 2 0 010-4z"/>
+                    <path d="M16.5 7.5a1 1 0 100-2 1 1 0 000 2z"/>
+                    </svg>
+                 </a>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2025 Jane Doe. All Rights Reserved. Website designed beautifully.</p>
+        </div>
+    </footer>
+
+    <!-- Your Custom JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
